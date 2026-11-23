@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A sample academic website for Matthias Gröbner, with research in number theory and eight papers listed in reverse chronological order.">
+  <meta name="theme-color" content="#8b1939">
+  <title>Classic academic · Matthias Gröbner</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238b1939'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia' font-size='24' fill='white'%3Eg%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#20242a;--muted:#59616b;--accent:#8b1939;--line:#dce0e4;--paper:#fff;--wash:#f5f6f8}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:35px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px;text-decoration-thickness:1px}a:hover{text-decoration:underline}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button,a,summary{-webkit-tap-highlight-color:transparent}.skip{position:fixed;top:-100px;left:20px;padding:10px;background:#fff;z-index:10}.skip:focus{top:10px}.shell{max-width:1240px;margin:auto;display:grid;grid-template-columns:260px minmax(0,1fr);gap:82px;padding:64px 56px 0}.sidebar{position:sticky;top:60px;align-self:start}.monogram{color:var(--accent);font:italic 48px Georgia,serif;line-height:1;margin-bottom:26px}.identity{font-size:18px;font-weight:650;margin:0}.affiliation{font-size:14px;color:var(--muted);margin:7px 0 30px}.sidebar nav{display:flex;flex-direction:column;gap:14px;margin:36px 0}.sidebar nav a{color:var(--ink);text-decoration:none;font-size:15px;display:block;padding:4px 0 4px 14px;border-left:2px solid transparent}.sidebar nav a:hover,.sidebar nav a.active{border-color:var(--accent);color:var(--accent)}.side-links{padding-top:25px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px;font-size:14px}.side-note{font-size:13px;color:var(--muted);margin-top:38px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:700;color:var(--accent);margin:0 0 16px}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.15}h1{font-size:clamp(42px,5.2vw,67px);letter-spacing:-.045em;margin:0 0 20px}h2{font-size:34px;letter-spacing:-.025em;margin:0}h3{font-size:24px;line-height:1.35;margin:0 0 10px;letter-spacing:-.01em}.role{font-size:18px;color:var(--muted);margin:0 0 27px}.intro{font-size:20px;line-height:1.75;max-width:690px;margin:0 0 25px}.hero{padding:8px 0 57px;border-bottom:1px solid var(--line)}.hero-links{display:flex;gap:24px;flex-wrap:wrap;font-size:14px}.hero-links a{font-weight:600}section{padding:46px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-bottom:26px}.section-count{color:var(--muted);font-size:14px}.research-copy{margin:0 0 20px;max-width:670px}.interests{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}.interests li{font-size:14px;border:1px solid var(--line);padding:5px 12px;border-radius:3px;background:var(--wash)}.section-intro{color:var(--muted);margin:-8px 0 25px}.paper{display:grid;grid-template-columns:58px minmax(0,1fr);gap:18px;padding:28px 0;border-top:1px solid var(--line)}.paper:first-of-type{border-top:0;padding-top:7px}.year{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px;padding-top:6px}.paper-title{color:var(--ink);text-decoration:none}.paper-title:hover{color:var(--accent)}.authors{margin:0 0 8px;font-size:15px;color:var(--muted)}.venue{margin:0 0 14px;font-size:14px}.status{color:var(--accent);font-weight:600}.links{display:flex;flex-wrap:wrap;gap:17px;font-size:14px}.links a{font-weight:600}details{margin-top:15px;font-size:14px;color:var(--muted)}summary{cursor:pointer;width:fit-content;color:var(--ink)}details p{margin:9px 0 0;max-width:610px}.contact-box{background:var(--wash);border-left:3px solid var(--accent);padding:25px 28px;margin-top:25px}.contact-box p{margin:0 0 8px}.contact-box a{overflow-wrap:anywhere}.address{color:var(--muted);font-size:14px}.footer{padding:29px 0 45px;display:flex;justify-content:space-between;gap:18px;font-size:12px;color:var(--muted)}.footer p{margin:0}.footer a{white-space:nowrap}.demo{display:inline-block;color:var(--accent);border:1px solid #e4c4ce;padding:3px 8px;font-size:12px;letter-spacing:.03em}.mobile-brand{display:none}
+    @media(min-width:1500px){.shell{padding-top:85px}}
+    @media(max-width:960px){.shell{grid-template-columns:190px minmax(0,1fr);gap:40px;padding:40px 30px 0}.sidebar{top:40px}.intro{font-size:18px}h3{font-size:22px}}
+    @media(max-width:700px){html{scroll-padding-top:20px}.shell{display:block;padding:0 24px}.sidebar{position:static;padding:24px 0 0;margin-bottom:33px}.monogram,.identity,.affiliation,.side-links,.side-note{display:none}.mobile-brand{display:flex;align-items:center;justify-content:space-between;font-size:15px;font-weight:650}.mobile-brand span:first-child{font:italic 30px Georgia,serif;color:var(--accent)}.sidebar nav{flex-direction:row;gap:18px;margin:19px 0 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);flex-wrap:wrap}.sidebar nav a{border-left:0;padding:0;font-size:14px}.sidebar nav a.active{text-decoration:underline}.hero{padding:0 0 36px}h1{font-size:45px}.role{font-size:16px}.intro{font-size:18px}.hero-links{gap:18px}section{padding:34px 0}h2{font-size:29px}.section-head{margin-bottom:22px}.paper{grid-template-columns:1fr;gap:7px;padding:24px 0}.year{padding:0}.paper h3{font-size:22px}.footer{flex-direction:column}.contact-box{padding:20px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  
+ .design-bar{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#16212e;color:#fff;padding:12px 28px;font:14px/1.5 system-ui,sans-serif;border-bottom:1px solid #364452}.design-bar a{color:#fff;text-decoration:none}.design-bar a:hover{text-decoration:underline}.design-bar strong{font-weight:650}.design-actions{display:flex;align-items:center;gap:14px}.design-numbers{display:flex;gap:5px}.design-numbers a{padding:3px 9px;border:1px solid #617082;border-radius:3px}.design-numbers a[aria-current=page]{background:#fff;color:#16212e;border-color:#fff}.design-bar a:focus-visible{outline:2px solid #fff;outline-offset:4px}
+ @media(max-width:700px){.design-bar{padding:12px 20px;flex-wrap:wrap;gap:9px}.design-actions{gap:12px;flex-wrap:wrap}.design-bar strong{font-size:14px}}
+</style></head><body><div class="design-bar"><strong>Design 1 / 5 · Classic academic</strong><div class="design-actions"><a href="designs.html">All designs</a><nav class="design-numbers" aria-label="Switch design"><a href="classic.html" aria-current="page" aria-label="View design 1: Classic academic">1</a><a href="minimal.html" aria-label="View design 2: Minimal journal">2</a><a href="editorial.html" aria-label="View design 3: Editorial">3</a><a href="midnight.html" aria-label="View design 4: Midnight">4</a><a href="swiss.html" aria-label="View design 5: Swiss modern">5</a></nav></div></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Site navigation">
+      <div class="monogram" aria-hidden="true">mg.</div>
+      <p class="identity">Matthias Gröbner</p>
+      <p class="affiliation">Mathematics · EPFL<br>Lausanne, Switzerland</p>
+      <div class="mobile-brand"><span aria-hidden="true">mg.</span><span>Matthias Gröbner</span></div>
+      <nav class="section-navigation" aria-label="On this page">
+        <a href="#about" class="active">About</a>
+        <a href="#research">Research</a>
+      </nav>
+      <div class="side-links">
+        <a href="https://people.epfl.ch/matthias.grobner" target="_blank" rel="noopener noreferrer">EPFL profile</a>
+        <a href="https://scholar.google.com/scholar?hl=en&amp;q=%22Matthias+Gr%C3%B6bner%22" target="_blank" rel="noopener noreferrer" aria-label="Search Matthias Gröbner’s publications on Google Scholar">Google Scholar</a>
+        <a href="https://tn.epfl.ch/" target="_blank" rel="noopener noreferrer">Chair of Number Theory</a>
+      </div>
+      <p class="side-note"><span class="demo">Sample website</span></p>
+    </aside>
+    <main id="main">
+      <header class="hero" id="about">
+        <p class="eyebrow">Mathematics · Number theory</p>
+        <h1>Matthias Gröbner</h1>
+        <p class="intro">I am a doctoral student in mathematics at EPFL under the supervision of <a href="https://people.epfl.ch/maryna.viazovska">Maryna Viazovska</a>. My research focuses on rational points, modular forms, equidistribution, and Diophantine approximation.</p>
+        <div class="hero-links"><a href="https://scholar.google.com/scholar?hl=en&amp;q=%22Matthias+Gr%C3%B6bner%22" target="_blank" rel="noopener noreferrer" aria-label="Search Matthias Gröbner’s publications on Google Scholar">Google Scholar</a><a href="mailto:matthias.grobner@epfl.ch">Email</a></div>
+      </header>
+      <section id="research" aria-labelledby="research-heading">
+        <div class="section-head"><h2 id="research-heading">Research</h2></div>
+        <p class="research-copy">How are rational points distributed on a sphere or an ellipsoid?</p>
+        <ul class="interests" aria-label="Research interests"><li>Rational points</li><li>Modular forms</li><li>Equidistribution</li><li>Diophantine approximation</li></ul>
+      </section>
+      <section id="publications" aria-labelledby="publications-heading">
+  <div class="section-head"><h2 id="publications-heading">Publications</h2><span class="section-count">8 papers · Newest first</span></div>
+<article class="paper">
+          <div class="year">2026</div><div>
+            <h3><a class="paper-title" href="https://arxiv.org/abs/2610.12619" target="_blank" rel="noopener noreferrer">A cyclotomic gluing construction for lattice sphere packings</a></h3>
+            <p class="authors">Nihar Gargava, Matthias Gröbner, and Michael Simkin</p>
+            <div class="links"><a href="https://arxiv.org/abs/2610.12619" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2610.12619" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>Uses a multi-cyclotomic gluing construction to improve the lower bound for lattice sphere packing density in every sufficiently large dimension.</p></details>
+          </div>
+        </article>
+<article class="paper">
+          <div class="year">2025</div><div>
+            <h3><a class="paper-title" href="https://arxiv.org/abs/2502.17678" target="_blank" rel="noopener noreferrer">Equidistribution, covering radius, and Diophantine approximation for rational points on the sphere</a></h3>
+            <p class="authors">Claire Burrin and Matthias Gröbner</p>
+            <div class="links"><a href="https://arxiv.org/abs/2502.17678" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2502.17678" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>Studies the distribution of rational points on the sphere at small scales, with applications to covering and intrinsic Diophantine approximation.</p></details>
+          </div>
+        </article>
+<article class="paper">
+          <div class="year">2024</div><div>
+            <h3><a class="paper-title" href="https://doi.org/10.1093/mnras/stae569" target="_blank" rel="noopener noreferrer">Gravitational wave mergers of accreting binary black holes in AGN discs</a></h3>
+            <p class="authors">Wako Ishibashi and Matthias Gröbner</p>
+            <p class="venue"><em>Monthly Notices of the Royal Astronomical Society</em> 529, 883–892</p>
+            <div class="links"><a href="https://doi.org/10.1093/mnras/stae569" target="_blank" rel="noopener noreferrer">Journal</a><a href="https://arxiv.org/abs/2412.01925" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2412.01925" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>An analytical model of accreting black-hole binaries in AGN discs, examining how disc properties affect orbital evolution and merger times.</p></details>
+          </div>
+        </article>
+<article class="paper">
+          <div class="year">2024</div><div>
+            <h3><a class="paper-title" href="https://arxiv.org/abs/2401.18008" target="_blank" rel="noopener noreferrer">Rational points on ellipsoids and modular forms</a></h3>
+            <p class="authors">Claire Burrin and Matthias Gröbner</p>
+            <div class="links"><a href="https://arxiv.org/abs/2401.18008" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2401.18008" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>Uses modular forms and spherical harmonic analysis to obtain bounds for counting and equidistribution of rational points on spheres and higher-dimensional ellipsoids.</p></details>
+          </div>
+        </article>
+<article class="paper">
+          <div class="year">2020</div><div>
+            <h3><a class="paper-title" href="https://doi.org/10.1051/0004-6361/202037799" target="_blank" rel="noopener noreferrer">Evolution of binary black holes in AGN accretion discs: Disc-binary interaction and gravitational wave emission</a></h3>
+            <p class="authors">Wako Ishibashi and Matthias Gröbner</p>
+            <p class="venue"><em>Astronomy &amp; Astrophysics</em> 639, A108</p>
+            <div class="links"><a href="https://doi.org/10.1051/0004-6361/202037799" target="_blank" rel="noopener noreferrer">Journal</a><a href="https://arxiv.org/abs/2006.07407" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2006.07407" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>Combines disc-binary interaction with gravitational-wave inspiral to study merger times and the evolution of orbital eccentricity.</p></details>
+          </div>
+        </article>
+<article class="paper">
+          <div class="year">2020</div><div>
+            <h3><a class="paper-title" href="https://doi.org/10.1051/0004-6361/202037681" target="_blank" rel="noopener noreferrer">Binary black hole mergers in AGN accretion discs: gravitational wave rate density estimates</a></h3>
+            <p class="authors">Matthias Gröbner, Wako Ishibashi, Shubhanshu Tiwari, Maria Haney, and Philippe Jetzer</p>
+            <p class="venue"><em>Astronomy &amp; Astrophysics</em> 638, A119</p>
+            <div class="links"><a href="https://doi.org/10.1051/0004-6361/202037681" target="_blank" rel="noopener noreferrer">Journal</a><a href="https://arxiv.org/abs/2005.03571" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2005.03571" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>Estimates the gravitational-wave merger rate from black-hole binaries embedded in AGN accretion discs, including dependence on disc and orbital parameters.</p></details>
+          </div>
+        </article>
+<article class="paper">
+          <div class="year">2020</div><div>
+            <h3><a class="paper-title" href="https://doi.org/10.1088/1361-6382/ab6be2" target="_blank" rel="noopener noreferrer">A note on the gravitational wave energy spectrum of parabolic and hyperbolic encounters</a></h3>
+            <p class="authors">Matthias Gröbner, Philippe Jetzer, Maria Haney, Shubhanshu Tiwari, and Wako Ishibashi</p>
+            <p class="venue"><em>Classical and Quantum Gravity</em> 37, 067002</p>
+            <div class="links"><a href="https://doi.org/10.1088/1361-6382/ab6be2" target="_blank" rel="noopener noreferrer">Journal</a><a href="https://arxiv.org/abs/2001.05187" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://arxiv.org/pdf/2001.05187" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <details><summary>About this paper</summary><p>Derives the gravitational-wave frequency spectrum for hyperbolic encounters and determines its parabolic limit.</p></details>
+          </div>
+        </article>
+<article class="paper">
+  <div class="year">2015</div><div>
+    <h3><a class="paper-title" href="https://doi.org/10.1039/C4PP00324A" target="_blank" rel="noopener noreferrer">Quantifying UV exposure, vitamin D status and their relationship in a group of high school students in an alpine environment</a></h3>
+    <p class="authors">Matthias Gröbner, Julian Gröbner, and Gregor Hülsen</p>
+    <p class="venue"><em>Photochemical &amp; Photobiological Sciences</em> 14, 352–357 (2015)</p>
+    <div class="links"><a href="https://doi.org/10.1039/C4PP00324A" target="_blank" rel="noopener noreferrer">Journal</a><a href="https://pubs.rsc.org/en/content/getauthorversionpdf/C4PP00324A" target="_blank" rel="noopener noreferrer">Author PDF</a><a href="https://pubmed.ncbi.nlm.nih.gov/25410623/" target="_blank" rel="noopener noreferrer">PubMed</a></div>
+    <details><summary>About this paper</summary><p>Examines personal ultraviolet exposure and vitamin D levels among seven high-school students in Davos, using wearable UV dosimeters and monthly blood samples.</p></details>
+  </div>
+</article>
+</section>
+      <footer class="footer"><p>Sample website · Biographical wording is a draft.<br>Publication and affiliation sources are linked above.</p><a href="#about">Back to top</a></footer>
+    </main>
+  </div>
+  <script>
+ const ids=['about','research','publications'];
+ const links=[...document.querySelectorAll('.section-navigation a')];
+ function update(){let active=ids[0];for(const id of ids){if(document.getElementById(id).getBoundingClientRect().top<=150)active=id;}for(const a of links){const current=a.hash==='#'+active;a.classList.toggle('active',current);if(current)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');}}
+ window.addEventListener('scroll',update,{passive:true});update();
+ </script></body></html>
